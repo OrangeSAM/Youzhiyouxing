@@ -1,0 +1,47 @@
+{
+  "name": "有知有行笔记本",
+  "version": "1.0",
+  "description": "由于有知有行官网文章的笔记收集整理",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus",
+    "tabs"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": [
+        "content.css"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "homepage_url": "https://blog.yibi.host",
+  "browser_action": {
+    "default_icon": {
+      "16": "img/geren.png",
+      "32": "img/geren.png",
+      "48": "img/geren.png",
+      "128": "img/geren.png"
+    },
+    "default_title": "金句传送门",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "img/geren.png",
+    "32": "img/geren.png",
+    "48": "img/geren.png",
+    "128": "img/geren.png"
+  }
+}

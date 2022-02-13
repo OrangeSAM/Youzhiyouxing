@@ -1,0 +1,7 @@
+.icon-wrap {
+  position: fixed;
+  top: 250px;
+  right: 5%;
+  /* 防止宿主页元素遮挡 */
+  z-index: 1;
+}
